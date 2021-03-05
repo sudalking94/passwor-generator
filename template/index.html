@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password generator</title>
+  </head>
+  <body>
+    <header><h1>비밀번호 생성기</h1></header>
+    <hr />
+    <main>
+      <form action="">
+        <div>
+          <span>비밀번호 길이:</span>
+          <select id="length">
+            <optgroup label="약함">
+              <option value=""></option>
+            </optgroup>
+            <optgroup label="강함">
+              <option value=""></option>
+            </optgroup>
+          </select>
+        </div>
+        <div>
+          <span>기호 포함:</span>
+          <label>
+            <input type="checkbox" id="sigh" />
+            (예:@#$%)
+          </label>
+        </div>
+        <div>
+          <span>숫자포함:</span>
+          <label>
+            <input type="checkbox" />
+            (예:123456789)
+          </label>
+        </div>
+        <div>
+          <span>소문자 포함:</span>
+          <label>
+            <input type="checkbox" />
+            (예:abcdefg)
+          </label>
+        </div>
+        <div>
+          <span>대문자 포함:</span>
+          <label><input type="checkbox" id="upper" /> (예:ABCDEFG)</label>
+        </div>
+        <button type="submit">비밀번호 생성</button>
+        <button>복사</button>
+      </form>
+    </main>
+  </body>
+</html>
